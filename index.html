@@ -11,25 +11,26 @@
 </head>
 
 <body>
-    <div class="container">
-        <picture><img class="hero" src="./images/illustration-hero.svg" alt=""></picture>
-        <div class="sub-container">
-            <h2>Order Summary</h2>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+    <main class="container">
+        <picture class="background">
+            <source srcset="./images/pattern-background-desktop.svg" media="(min-width: 28.125rem)">
+            <img src="./images/pattern-background-mobile.svg" alt="">
+        </picture>
+        <img class="hero" src="./images/illustration-hero.svg" alt="happy person listening to music">
+        <article class="card-container">
+            <h1>Order Summary</h1>
+            <p class="summary-p">You can now listen to millions of songs, audiobooks, and podcasts on any
                 device anywhere you like!</p>
             <div class="plan-container">
-                <i><img src="./images/icon-music.svg" alt=""></i>
-                <div class="plan-text-container">
-                    <div class="plan">Annual Plan</div>
-                    <div class="price">$59.99/year</div>
-                </div>
+                <img src="./images/icon-music.svg" alt="">
+                <p class="plan">Annual Plan <span class="price">$59.99/year</span></p>
                 <a href="#">Change</a>
             </div>
-            <button>Proceed to Payment</button>
-            <div class="change-order">Cancel Order</div>
-        </div>
-    </div>
-    <script src="scripts/index.js"></script>
+            <button class="btn-proceed-payment">Proceed to Payment</button>
+            <a class="cancel-order" href="#">Cancel Order</a>
+        </article>
+    </main>
+
 </body>
 
 </html>
